@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bang diem</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="Ex1_js.js"></script>
+
+<style>
+body{
+    background:#999;
+}
+
+.container{
+    width:800px;
+    margin-top:50px;
+    background:#aaa;
+    padding:30px;
+    border:3px solid red;
+}
+
+h1{
+    text-align:center;
+    color:#2f65c7;
+    font-weight:bold;
+}
+
+#display{
+    font-size:40px;
+    font-weight:bold;
+    margin-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>BANG DIEM CUA EM</h1>
+
+<div class="form-group">
+<label>Semester1:</label>
+<input type="text" id="text_1" class="form-control">
+</div>
+
+<div class="form-group">
+<label>Semester2:</label>
+<input type="text" id="text_2" class="form-control">
+</div>
+
+<div class="form-group">
+<label>Year:</label>
+
+<select id="select" style="width:60px;color:red;">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+
+</div>
+
+<div class="form-group">
+<label>Summarise:</label>
+<input type="text" id="result" class="form-control" disabled>
+</div>
+
+<p id="display"></p>
+
+<br>
+
+<button onclick="myFunction1()" class="btn btn-default">OK</button>
+<button onclick="myFunction2()" class="btn btn-default">Cancel</button>
+
+</div>
+
+</body>
+</html>
